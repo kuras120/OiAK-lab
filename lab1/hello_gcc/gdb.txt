@@ -1,0 +1,144 @@
+Breakpoint 1 at 0x400497: file hello_world.s, line 26.
+Starting program: /home/wojciech/Dokumenty/OiAK-lab/hello_gcc/hello_world 
+
+Breakpoint 1, main () at hello_world.s:26
+26		mov $WRITE, 	%eax	# Funkcja:	wywolana funkcja (4 = write)
+rax            0x400497	4195479
+rbx            0x0	0
+rcx            0x4004c0	4195520
+rdx            0x7fffffffdf38	140737488346936
+rsi            0x7fffffffdf28	140737488346920
+rdi            0x1	1
+rbp            0x4004c0	0x4004c0 <__libc_csu_init>
+rsp            0x7fffffffde48	0x7fffffffde48
+r8             0x7ffff7dd0d80	140737351847296
+r9             0x7ffff7dd0d80	140737351847296
+r10            0x2	2
+r11            0x3	3
+r12            0x4003b0	4195248
+r13            0x7fffffffdf20	140737488346912
+r14            0x0	0
+r15            0x0	0
+rip            0x400497	0x400497 <main>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+Quit
+27		mov $STDOUT, 	%ebx	# arg1 Gdzie:	podstawowy strumień wyjściowy
+rax            0x4	4
+rbx            0x0	0
+rcx            0x4004c0	4195520
+rdx            0x7fffffffdf38	140737488346936
+rsi            0x7fffffffdf28	140737488346920
+rdi            0x1	1
+rbp            0x4004c0	0x4004c0 <__libc_csu_init>
+rsp            0x7fffffffde48	0x7fffffffde48
+r8             0x7ffff7dd0d80	140737351847296
+r9             0x7ffff7dd0d80	140737351847296
+r10            0x2	2
+r11            0x3	3
+r12            0x4003b0	4195248
+r13            0x7fffffffdf20	140737488346912
+r14            0x0	0
+r15            0x0	0
+rip            0x40049c	0x40049c <main+5>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+Quit
+28		mov $buf, 	%ecx	# arg2 Co:	wczytanie początku adresu bufora
+rax            0x4	4
+rbx            0x1	1
+rcx            0x4004c0	4195520
+rdx            0x7fffffffdf38	140737488346936
+rsi            0x7fffffffdf28	140737488346920
+rdi            0x1	1
+rbp            0x4004c0	0x4004c0 <__libc_csu_init>
+rsp            0x7fffffffde48	0x7fffffffde48
+r8             0x7ffff7dd0d80	140737351847296
+r9             0x7ffff7dd0d80	140737351847296
+r10            0x2	2
+r11            0x3	3
+r12            0x4003b0	4195248
+r13            0x7fffffffdf20	140737488346912
+r14            0x0	0
+r15            0x0	0
+rip            0x4004a1	0x4004a1 <main+10>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+Quit
+29		mov $buf_len, 	%edx	# arg3 Dlugosc:	wczytanie wielkosci bufora
+rax            0x4	4
+rbx            0x1	1
+rcx            0x601028	6295592
+rdx            0x7fffffffdf38	140737488346936
+rsi            0x7fffffffdf28	140737488346920
+rdi            0x1	1
+rbp            0x4004c0	0x4004c0 <__libc_csu_init>
+rsp            0x7fffffffde48	0x7fffffffde48
+r8             0x7ffff7dd0d80	140737351847296
+r9             0x7ffff7dd0d80	140737351847296
+r10            0x2	2
+r11            0x3	3
+r12            0x4003b0	4195248
+r13            0x7fffffffdf20	140737488346912
+r14            0x0	0
+r15            0x0	0
+rip            0x4004a6	0x4004a6 <main+15>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+Quit
+30		int $SYSCALL
+rax            0x4	4
+rbx            0x1	1
+rcx            0x601028	6295592
+rdx            0xc	12
+rsi            0x7fffffffdf28	140737488346920
+rdi            0x1	1
+rbp            0x4004c0	0x4004c0 <__libc_csu_init>
+rsp            0x7fffffffde48	0x7fffffffde48
+r8             0x7ffff7dd0d80	140737351847296
+r9             0x7ffff7dd0d80	140737351847296
+r10            0x2	2
+r11            0x3	3
+r12            0x4003b0	4195248
+r13            0x7fffffffdf20	140737488346912
+r14            0x0	0
+r15            0x0	0
+rip            0x4004ab	0x4004ab <main+20>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+Quit
+Dump of assembler code for function main:
+   0x0000000000400497 <+0>:	mov    $0x4,%eax
+   0x000000000040049c <+5>:	mov    $0x1,%ebx
+   0x00000000004004a1 <+10>:	mov    $0x601028,%ecx
+   0x00000000004004a6 <+15>:	mov    $0xc,%edx
+=> 0x00000000004004ab <+20>:	int    $0x80
+   0x00000000004004ad <+22>:	mov    $0x1,%eax
+   0x00000000004004b2 <+27>:	mov    $0x0,%ebx
+   0x00000000004004b7 <+32>:	int    $0x80
+   0x00000000004004b9 <+34>:	nopl   0x0(%rax)
+End of assembler dump.
+0x601028:	0x6c6c6568
+0x601028:	"hello world\n"
+Continuing.
+[Inferior 1 (process 2196) exited normally]

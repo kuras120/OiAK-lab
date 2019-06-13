@@ -1,0 +1,18 @@
+Zadania lab. AK2/OiAK, tydzień 21-22
+Napisać kod uruchamiający i kończący dwa wątki 
+(w obrębie tej samej przestrzeni adresowej).
+* przedstawić mechanizm osłony sekcji krytycznej. 
+Jakie rozkazy do tego służą?
+Napisać kod wypełniający zerami tablicę dwuwymiarową. 
+Zmierzyć czas wykonania w zależności od wypełniania zerami 
+po wierszach i po kolumnach.
+Symulacja ataku typu przepełnienie stosu:
+Wczytać ze standardowego wejścia na stos kod programu 
+(Hello World, może być dopełniony dowolnymi danymi), 
+następnie ten kod wykonać (przedstawić demonstrację wykonania).
+Przydział pamięci funkcjami systemowymi mmap/brk.
+Wskazać korelację pomiędzy rozmiarem wirtualnym programu (top), 
+a wielkością zażądanej pamięci.
+Czym się różni żądanie przydziału pamięci od realnego wykorzystania? 
+Omówić na przykładzie wypełnienia pamięci zerami/losowymi danymi.
+Jaki jest maksymalny rozmiar pamięci, którą można przydzielić?
